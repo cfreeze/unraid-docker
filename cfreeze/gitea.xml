@@ -30,7 +30,7 @@ Git SCM server
   </Environment>    
   <Data>
     <Volume>
-      <HostDir></HostDir>
+      <HostDir>/mnt/users/gitea</HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
