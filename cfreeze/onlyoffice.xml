@@ -71,7 +71,7 @@ OnlyOffice Community Document Server
   <Data>
     <Volume>
       <HostDir>/mnt/users/onlyoffice</HostDir>
-      <ContainerDir>/data</ContainerDir>
+      <ContainerDir>/var/www/onlyoffice/Data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
