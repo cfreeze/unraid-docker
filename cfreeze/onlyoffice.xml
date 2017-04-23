@@ -24,46 +24,6 @@ OnlyOffice Community Document Server
         <ContainerPort>443</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
-	  <Port>
-        <HostPort>5222</HostPort>
-        <ContainerPort>5222</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-	  <Port>
-        <HostPort>3306</HostPort>
-        <ContainerPort>3306</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>9865</HostPort>
-        <ContainerPort>9865</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-	  <Port>
-        <HostPort>9888</HostPort>
-        <ContainerPort>9888</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-	  <Port>
-        <HostPort>9866</HostPort>
-        <ContainerPort>9866</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-	  <Port>
-        <HostPort>9871</HostPort>
-        <ContainerPort>9871</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>9882</HostPort>
-        <ContainerPort>9882</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-	  <Port>
-        <HostPort>5280</HostPort>
-        <ContainerPort>5280</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
     </Publish>
   </Networking>
   <Environment>
