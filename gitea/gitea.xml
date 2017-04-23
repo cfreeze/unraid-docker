@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Name>gitea</Name>
+  <Description>
+Git with a cup of tea
+  </Description>
+  <Overview>
+Git SCM server
+  </Overview>
+  <GitHub>http://192.168.2.232:3000/chris/unraid-docker/gitea</GitHub>
+  <Repository>chris/unraid-docker/gitea</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort></HostPort>
+        <ContainerPort>3000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>WIDTH</Name>
+      <Value>1280</Value>
+    </Variable>
+    <Variable>
+      <Name>HEIGHT</Name>
+      <Value>720</Value>
+    </Variable>
+  </Environment>    
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <Banner></Banner>
+  <Icon>https://gitea.io/images/gitea.png</Icon>
+  <Beta>False</Beta>
+  <Category>Other: Development:</Category>
+  <Date>2016-06-08</Date>
+  <Changes>
+    [font size=4]2017.04.22[/font]
+    - Initial Release    
+  </Changes>
+</Containers>
