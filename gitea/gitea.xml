@@ -7,8 +7,8 @@ Git with a cup of tea
   <Overview>
 Git SCM server
   </Overview>
-  <GitHub>http://192.168.2.232:3000/chris/unraid-docker/gitea</GitHub>
-  <Repository>chris/unraid-docker/gitea</Repository>
+  <GitHub>hhttps://github.com/cfreeze/unraid-docker</GitHub>
+  <Repository>cfreeze/unraid-docker</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
     <Networking>
