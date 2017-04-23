@@ -30,7 +30,7 @@ OnlyOffice Community Document Server
   </Environment>    
   <Data>
     <Volume>
-      <HostDir>/mnt/users/onlyoffice</HostDir>
+      <HostDir>/mnt/user/onlyoffice</HostDir>
       <ContainerDir>/var/www/onlyoffice/Data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
