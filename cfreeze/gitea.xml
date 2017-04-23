@@ -8,7 +8,7 @@ Git with a cup of tea
 Git SCM server
   </Overview>
   <GitHub>hhttps://github.com/cfreeze/unraid-docker</GitHub>
-  <Repository>cfreeze/unraid-docker</Repository>
+  <Repository>go-gitea/gitea</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
     <Networking>
