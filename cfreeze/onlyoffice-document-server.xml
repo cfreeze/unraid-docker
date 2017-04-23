@@ -14,21 +14,6 @@ OnlyOffice Document Server
     <Networking>
     <Mode>bridge</Mode>
     <Publish>
-      <Port>
-        <HostPort>80</HostPort>
-        <ContainerPort>80</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-	  <Port>
-        <HostPort>443</HostPort>
-        <ContainerPort>443</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-	  <Port>
-        <HostPort>5222</HostPort>
-        <ContainerPort>5222</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
     </Publish>
   </Networking>
   <Environment>
