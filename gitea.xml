@@ -22,14 +22,6 @@ Git SCM server
     </Publish>
   </Networking>
   <Environment>
-    <Variable>
-      <Name>WIDTH</Name>
-      <Value>1280</Value>
-    </Variable>
-    <Variable>
-      <Name>HEIGHT</Name>
-      <Value>720</Value>
-    </Variable>
   </Environment>    
   <Data>
     <Volume>
