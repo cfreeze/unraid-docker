@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Name>OnlyOffice</Name>
+  <Description>
+OnlyOffice Community Document Server
+  </Description>
+  <Overview>
+ OnlyOffice Community Document Server
+  </Overview>
+  <GitHub>hhttps://github.com/cfreeze/unraid-docker</GitHub>
+  <Repository>onlyoffice/communityserver</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>80</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+	  <Port>
+        <HostPort>443</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+	  <Port>
+        <HostPort>5222</HostPort>
+        <ContainerPort>5222</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+	  <Port>
+        <HostPort>3306</HostPort>
+        <ContainerPort>3306</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>9865</HostPort>
+        <ContainerPort>9865</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+	  <Port>
+        <HostPort>9888</HostPort>
+        <ContainerPort>9888</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+	  <Port>
+        <HostPort>9866</HostPort>
+        <ContainerPort>9866</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+	  <Port>
+        <HostPort>9871</HostPort>
+        <ContainerPort>9871</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>9882</HostPort>
+        <ContainerPort>9882</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+	  <Port>
+        <HostPort>5280</HostPort>
+        <ContainerPort>5280</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+  </Environment>    
+  <Data>
+    <Volume>
+      <HostDir>/mnt/users/onlyoffice</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <Banner></Banner>
+  <Icon>http://i.ytimg.com/vi/RniZtw0A9WQ/hqdefault.jpg</Icon>
+  <Beta>False</Beta>
+  <Category>Cloud: Office:</Category>
+  <Date>2017-04-23</Date>
+  <Changes>
+    [font size=4]2017.04.23[/font]
+    - Initial Release    
+  </Changes>
+</Containers>
