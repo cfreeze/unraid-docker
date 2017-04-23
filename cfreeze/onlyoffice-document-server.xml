@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
-  <Name>OnlyOffice</Name>
+  <Name>OnlyOffice Document Server</Name>
   <Description>
-OnlyOffice Community Document Server
+OnlyOffice Document Server
   </Description>
   <Overview>
- OnlyOffice Community Document Server
+ OnlyOffice Document Server
   </Overview>
   <GitHub>hhttps://github.com/cfreeze/unraid-docker</GitHub>
-  <Repository>onlyoffice/communityserver</Repository>
+  <Repository>onlyoffice/documentserver</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
     <Networking>
@@ -24,14 +24,24 @@ OnlyOffice Community Document Server
         <ContainerPort>443</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
+	  <Port>
+        <HostPort>5222</HostPort>
+        <ContainerPort>5222</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
     </Publish>
   </Networking>
   <Environment>
   </Environment>    
   <Data>
     <Volume>
-      <HostDir>/mnt/user/onlyoffice</HostDir>
-      <ContainerDir>/var/www/onlyoffice/Data</ContainerDir>
+      <HostDir>/mnt/user/onlyoffice/ds-data</HostDir>
+      <ContainerDir>/app/onlyoffice/DocumentServer/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/onlyoffice/ds-logs</HostDir>
+      <ContainerDir>/app/onlyoffice/DocumentServer/logs</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
