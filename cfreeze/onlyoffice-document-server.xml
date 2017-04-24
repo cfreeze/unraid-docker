@@ -20,7 +20,7 @@ OnlyOffice Document Server
   </Environment>    
   <Data>
     <Volume>
-      <HostDir>/mnt/user/onlyoffice/ds-data</HostDir>
+      <HostDir>/mnt/user/onlyoffice/data</HostDir>
       <ContainerDir>/app/onlyoffice/DocumentServer/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>

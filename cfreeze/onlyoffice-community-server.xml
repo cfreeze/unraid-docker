@@ -48,7 +48,7 @@ OnlyOffice Community Server
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/onlyoffice/mysql</HostDir>
+      <HostDir>/mnt/user/onlyoffice/cs-mysql</HostDir>
       <ContainerDir>/var/lib/mysql</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
