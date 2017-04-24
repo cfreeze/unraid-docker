@@ -15,7 +15,7 @@ OnlyOffice Document Server
     <Mode>bridge</Mode>
     <Publish>
 	<Port>
-        <HostPort>8871</HostPort>
+        <HostPort>8777</HostPort>
         <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -29,14 +29,14 @@ OnlyOffice Document Server
   <Environment>
   </Environment>    
   <Data>
-    <Volume>
-      <HostDir>/mnt/user/onlyoffice/ds-data</HostDir>
-      <ContainerDir>/app/onlyoffice/DocumentServer/data</ContainerDir>
+  <Volume>
+      <HostDir>/mnt/user/onlyoffice/ds-logs</HostDir>
+      <ContainerDir>/app/onlyoffice/DocumentServer/logs</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/onlyoffice/ds-logs</HostDir>
-      <ContainerDir>/app/onlyoffice/DocumentServer/logs</ContainerDir>
+      <HostDir>/mnt/user/onlyoffice/ds-data</HostDir>
+      <ContainerDir>/app/onlyoffice/DocumentServer/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
