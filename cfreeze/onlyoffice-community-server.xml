@@ -43,23 +43,23 @@ OnlyOffice Community Server
   </Environment>    
   <Data>
     <Volume>
-      <HostDir>/mnt/user/onlyoffice/data</HostDir>
-      <ContainerDir>/var/www/onlyoffice/Data</ContainerDir>
+      <HostDir>/mnt/user/onlyoffice/cs-data</HostDir>
+      <ContainerDir>/app/onlyoffice/CommunityServer/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
       <HostDir>/mnt/user/onlyoffice/cs-mysql</HostDir>
-      <ContainerDir>/var/lib/mysql</ContainerDir>
+      <ContainerDir>/app/onlyoffice/CommunityServer/mysql</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
       <HostDir>/mnt/user/onlyoffice/cs-logs</HostDir>
-      <ContainerDir>/var/log/onlyoffice</ContainerDir>
+      <ContainerDir>/app/onlyoffice/CommunityServer/logs</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/onlyoffice/DocumentServerData</HostDir>
-      <ContainerDir>/var/www/onlyoffice/DocumentServerData</ContainerDir>
+      <HostDir>/mnt/user/onlyoffice/ds-data</HostDir>
+      <ContainerDir>/app/onlyoffice/DocumentServer/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
